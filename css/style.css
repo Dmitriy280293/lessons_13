@@ -1,0 +1,46 @@
+body{
+    max-width: 1230px;
+    margin: 0 auto;
+    color: #1E212C;
+    font-family: 'Lato';
+    font-style: normal;
+    line-height: 160%;
+}
+.header-transform{
+    background-color: green;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: aliceblue;
+    padding-top: 25px;
+}
+.animation-item{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    animation-name: rotate-block;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 0 auto;
+    margin-top: 50px;
+    animation-direction: normal;
+    animation-play-state: normal;
+    animation-delay: 2s;
+    
+}
+.animation-item:hover{
+    animation-play-state: paused;
+}
+@keyframes rotate-block{
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: translate(500px, 0px);
+    }
+    100% {
+        transform: translate(0px, 200px);
+    }
+}
